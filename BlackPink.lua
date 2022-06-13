@@ -117,7 +117,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1373615087}  
+local ListSudos ={Sudo_Id,258295856}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -128,9 +128,9 @@ end
 function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersQ = Redis:sismember(TheBlackPink.."BlackPink:DevelopersQ:Groups",UserId) 
-if UserId == 1373615087 then
+if UserId == 258295856 then
 Status = true
-elseif UserId == 1373615087 then
+elseif UserId == 258295856 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -154,9 +154,9 @@ Managers = Redis:sismember(TheBlackPink.."BlackPink:Managers:Group"..ChatId,User
 Addictive = Redis:sismember(TheBlackPink.."BlackPink:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheBlackPink.."BlackPink:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1373615087 then
+if UserId == 258295856 then
 Status = 'مبرمج السورس'
-elseif UserId == 1373615087 then
+elseif UserId == 258295856 then
 Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -716,12 +716,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸](https://t.me/ieeo3s)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه المسح *',
-unLock   = '[B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸](https://t.me/ieeo3s)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸](https://t.me/ieeo3s)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الكتم *',
-lockKid  = '[B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸](https://t.me/ieeo3s)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه التقييد *',
-lockKick = '[B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸](https://t.me/ieeo3s)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الطرد *',
-Reply    = '[B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸](https://t.me/ieeo3s)\n*— — — — — — — — —\n᥀︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮](https://t.me/VV455)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه المسح *',
+unLock   = '[⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮](https://t.me/VV455)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮](https://t.me/VV455)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الكتم *',
+lockKid  = '[⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮](https://t.me/VV455)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه التقييد *',
+lockKick = '[⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮](https://t.me/VV455)\n*— — — — — — — — —\n᥀︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n᥀︙خاصيه الطرد *',
+Reply    = '[⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮](https://t.me/VV455)\n*— — — — — — — — —\n᥀︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -734,9 +734,9 @@ Managers = Redis:sismember(TheBlackPink.."BlackPink:Managers:Group"..ChatId,User
 Addictive = Redis:sismember(TheBlackPink.."BlackPink:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheBlackPink.."BlackPink:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1373615087 then
+if UserId == 258295856 then
 Status = true
-elseif UserId == 1373615087 then
+elseif UserId == 258295856 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -773,9 +773,9 @@ Managers = Redis:sismember(TheBlackPink.."BlackPink:Managers:Group"..ChatId,User
 Addictive = Redis:sismember(TheBlackPink.."BlackPink:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheBlackPink.."BlackPink:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1373615087 then
+if UserId == 258295856 then
 Status = true
-elseif UserId == 1373615087 then
+elseif UserId == 258295856 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -1575,7 +1575,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = 'B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ⁦', url='https://t.me/ieeo3s'},
+{text = '⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ⁦', url='https://t.me/VV455'},
 },
 }
 }
@@ -1772,7 +1772,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = 'B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ⁦', url='https://t.me/ieeo3s'},
+{text = '⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ⁦', url='https://t.me/VV455'},
 },
 }
 }
@@ -2046,7 +2046,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = 'B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ⁦', url='https://t.me/ieeo3s'},
+{text = '⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ⁦', url='https://t.me/VV455'},
 },
 }
 }
@@ -2643,7 +2643,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = 'B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸', url = 't.me/ieeo3s'},
+{text = '⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮', url = 'https://t.me/VV455'},
 },
 }
 }
@@ -2726,7 +2726,7 @@ data = {
 {text = '‹ تفعيل الايدي ›', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
 {
-{text = 'B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸', url = 't.me/ieeo3s'},
+{text = '⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮', url = 't.me/VV455'},
 },
 }
 }
@@ -4535,7 +4535,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = 'B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸', url='https://t.me/ieeo3s'},
+{text = '⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮', url='https://t.me/VV455'},
 },
 }
 }
@@ -6259,7 +6259,7 @@ local TestText = "  ❲ Owner Groups ❳\n— — — — — — — — —\n 
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳', url = "https://t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳', url = "https://t.me/VV455"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -6665,7 +6665,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
 },
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳',url="t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳',url="t.me/NNN8X"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6676,7 +6676,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار متحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳',url="t.me/ieeo3s"}},
+{{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳',url="t.me/NNN8X"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6686,7 +6686,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الشعر لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳',url="t.me/ieeo3s"}},
+{{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳',url="t.me/NNN8X"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6696,7 +6696,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الميمز لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳',url="t.me/ieeo3s"}},
+{{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳',url="t.me/NNN8X"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/remixsource/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6707,7 +6707,7 @@ local Text ='*᥀︙تم اختيار ريمكس لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳', url = "https://t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳', url = "https://t.me/NNN8X"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6719,7 +6719,7 @@ local Text ='*᥀︙تم اختيار الفلم لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳', url = "https://t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳', url = "https://t.me/NNN8X"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6731,7 +6731,7 @@ local Text ='*᥀︙تم اختيار انمي لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳', url = "https://t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳', url = "https://t.me/NNN8X"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -6742,7 +6742,7 @@ Abs = math.random(2,140);
 local Text ='*᥀︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳',url="t.me/ieeo3s"}},
+{{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳',url="t.me/NNN8X"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/lDIDIl/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -6753,7 +6753,7 @@ local Text ='*᥀︙تم اختيار صور*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳', url = "https://t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳', url = "https://t.me/NNN8X"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -8433,7 +8433,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/VV455'}, 
 },
 }
 }
@@ -9775,7 +9775,7 @@ Redis:del(TheBlackPink..'BlackPink:Texting:DevTheBlackPink')
 return LuaTele.sendText(msg_chat_id,msg_id,'᥀︙ تم حذف كليشه المطور')
 end
 if text == 'مبرمج سورس' or text == 'مبرمج السورس' or text == 'المبرمج' then  
-local UserId_Info = LuaTele.searchPublicChat("PPPPPE")
+local UserId_Info = LuaTele.searchPublicChat("Zbbbbb")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -9786,11 +9786,11 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  ❲ BlackPink 𝖲𝗈𝗎𝗋𝖼𝖾 ❳\n— — — — — — — — —\n ᥀︙*Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n᥀︙*Dev Bio* : [❲ "..Bio.." ❳]"
+local TestText = "  ❲ AL ARB 𝖲𝗈𝗎𝗋𝖼𝖾 ❳\n— — — — — — — — —\n ᥀︙*Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n᥀︙*Dev Bio* : [❲ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳', url = "https://t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳', url = "https://t.me/VV455"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9800,10 +9800,10 @@ local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/PPPPPE"}
+{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/ZBBBBB"}
 },
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳', url = "https://t.me/ieeo3s"},
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳', url = "https://t.me/VV455"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9825,7 +9825,7 @@ local TestText = "  ❲ Developers Bot ❳\n— — — — — — — — —\
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳', url = "https://t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳', url = "https://t.me/VV455"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9896,7 +9896,7 @@ data = {
 {text = 'Facebook', url = 'https://www.facebook.com/help/deleteaccount'},{text = 'Snapchat', url = 'https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount'}
 },
 {
-{text = '˛ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 .', url = 't.me/ieeo3s'}, 
+{text = '˛ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 .', url = 'https://t.me/VV455'}, 
 },
 }
 }
@@ -9914,21 +9914,21 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'Channel Source ،', url = 't.me/ieeo3s'}, 
+{text = 'Channel Source ،', url = 't.me/VV455'}, 
 },
 {
-{text = 'Annotations Source', url = 't.me/TKSLX'}, 
+{text = 'Annotations Source', url = 't.me/NNN8X'}, 
 },
 {
-{text = 'Communication Source', url = 't.me/PEE9BOT'}, 
+{text = 'Communication Source', url = 't.me/OF4CBOT'}, 
 },
 {
-{text = 'Developer Source !', url = 't.me/PPPPPE'}, 
+{text = 'Developer Source !', url = 't.me/Zbbbbb'}, 
 },
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id, [[
-*⌔︙Source BlackPink *
+*⌔︙Source Al ARB *
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ]],"md",false, false, false, false, reply_markup)
 elseif text == 'الاوامر' then
@@ -9955,7 +9955,7 @@ data = {
 {text = 'اوامر القفل الفتح', data = msg.sender.user_id..'/NoNextSeting'}, {text = '  اوامر التعطيل التفعيل  ', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/VV455'}, 
 },
 }
 }
@@ -9983,7 +9983,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/VV455'}, 
 },
 }
 }
@@ -10003,7 +10003,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/VV455'}, 
 },
 }
 }
@@ -10023,7 +10023,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/VV455'}, 
 },
 }
 }
@@ -10043,7 +10043,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/VV455'}, 
 },
 }
 }
@@ -10063,7 +10063,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/VV455'}, 
 },
 }
 }
@@ -10077,7 +10077,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸', url = 't.me/ieeo3s'}, 
+{text = 'B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸', url = 't.me/VV455'}, 
 },
 }
 }
@@ -10356,20 +10356,20 @@ end
 Redis:del(TheBlackPink.."BlackPink:Name:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"᥀︙تم حذف اسم البوت ","md",true)   
 end
-if text == (Redis:get(TheBlackPink.."BlackPink:Name:Bot") or "بلاك بينك") then
-local NamesBot = (Redis:get(TheBlackPink.."BlackPink:Name:Bot") or "بلاك بينك")
+if text == (Redis:get(TheBlackPink.."BlackPink:Name:Bot") or "العرب") then
+local NamesBot = (Redis:get(TheBlackPink.."BlackPink:Name:Bot") or "العرب")
 local NameBots = {
 "ها "..NamesBot.. " شتريد؟",
 "أჂ̤ أჂ̤ هياتني اني",
 "موجود بس لتصيح",
-"لتــلح دا احجي ويه بنات بلاك بينك بعدين اجاوبك",
+"لتــلح دا احجي ويه بنات العرب بعدين اجاوبك",
 "راح نموت بكورونا ونته بعدك تصيح "..NamesBot,
 'يمعود والله نعسان'
 }
 return LuaTele.sendText(msg_chat_id,msg_id, NameBots[math.random(#NameBots)],"md",true)  
 end
 if text == "بوت" then
-local NamesBot = (Redis:get(TheBlackPink.."BlackPink:Name:Bot") or "بلاك بينك")
+local NamesBot = (Redis:get(TheBlackPink.."BlackPink:Name:Bot") or "العرب")
 local BotName = {
 "باوع لك خليني احبك وصيحلي باسمي "..NamesBot,
 "لتخليني ارجع لحركاتي لقديمه وردا ترا اسمي "..NamesBot.. "",
@@ -11322,7 +11322,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '᥀ السورس .', url = 't.me/ieeo3s'},{text = '᥀ لتنصيب بوت .', url = 't.me/PPPPPE'}, 
+{text = '᥀ السورس .', url = 't.me/VV455'},{text = '᥀ لتنصيب بوت .', url = 't.me/Zbbbbb'}, 
 },
 {
 {text = '᥀ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -11335,7 +11335,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '᥀ السورس .', url = 't.me/ieeo3s'},{text = '᥀ لتنصيب بوت .', url = 't.me/PPPPPE'}, 
+{text = '᥀ السورس .', url = 't.me/VV455'},{text = '᥀ لتنصيب بوت .', url = 't.me/Zbbbbb'}, 
 },
 {
 {text = '᥀ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -12176,7 +12176,7 @@ keyboard.inline_keyboard = {
 {text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
 },
 {
-{text = '❲ B𝗹𝗮𝗰𝗸𝗽𝗶𝗻𝗸 ❳',url="t.me/ieeo3s"}
+{text = '❲ ⌯ 𝐀ℓ-𝐀𝐑𝐁 𐇮 ❳',url="https://t.me/VV455"}
 },
 }
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12454,7 +12454,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/vv455'}, 
 },
 }
 }
@@ -12512,7 +12512,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/vv455'}, 
 },
 }
 }
@@ -12571,7 +12571,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/vv455'}, 
 },
 }
 }
@@ -12624,7 +12624,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/vv455'}, 
 },
 }
 }
@@ -12664,7 +12664,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/vv455'}, 
 },
 }
 }
@@ -12719,7 +12719,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/vv455'}, 
 },
 }
 }
@@ -12760,7 +12760,7 @@ data = {
 {text = 'القائمه الرئيسيه ', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/ieeo3s'}, 
+{text = '- قناة السورس', url = 't.me/vv455'}, 
 },
 }
 }
